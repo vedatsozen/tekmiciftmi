@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÇİFT SAYI MI TEK SAYI MI ?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-center">
+
+<div class="flex flex-col justify-center items-center gap-5 mt-24">
+
+<input id="input" type="number" class="p-3 m-auto mt-12 border border-2 border-black h-12 w-5/12 text-center text-3xl">
+
+<button id="hesaplabtn" class="px-5 py-3 rounded bg-black text-white border border-2 m-auto block mt-12" onclick="hesapla()">Tek mi Çift Mi</button>
+    
+<h1 id="sonuc" class="number mt-12 text-3xl text-black">Girdiğiniz Sayının Tek mi Çift mi Olduğu Burada Yazacak.</h1>
+
+</div>
+
+<script>
+
+function hesapla() {
+
+let girilensayi = document.getElementById("input").value;
+
+if ( girilensayi % 2 === 0 ) 
+
+{
+
+document.getElementById("sonuc").innerHTML = "Girdiğiniz Sayı Çifttir";
+
+}
+
+else {
+
+    document.getElementById("sonuc").innerHTML = "Girdiğiniz Sayı Tektir";
+
+}
+
+}
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
