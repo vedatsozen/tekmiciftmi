@@ -11,3 +11,7 @@
     letter-spacing: 4px;
     cursor: pointer;
   }
+
+  button:active {
+    transform: scale(0.9);
+  }
