@@ -33,10 +33,14 @@ document.getElementById("sonuc").innerHTML = "Girdiğiniz Sayı Çifttir";
 
 }
 
-else {
+else if ( girilensayi % 2 === 1 ) {
 
     document.getElementById("sonuc").innerHTML = "Girdiğiniz Sayı Tektir";
 
+}
+
+else {
+    document.getElementById("sonuc").innerHTML = "Girilen Sayı Tam Sayı Değildir.";
 }
 
 }
